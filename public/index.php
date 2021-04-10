@@ -1,6 +1,8 @@
 <?php
-$loader = require __DIR__ . '/vendor/autoload.php';
-$loader->addPsr4('App\\Wcs\\', __DIR__);
+require __DIR__ . '/vendor/autoload.php';
+use HelloWorld\SayHello;
+
+echo SayHello::world();
 
 require_once 'Hello.php';
 $hello = new Hello();
